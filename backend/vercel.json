@@ -1,0 +1,8 @@
+{
+    "functions": {
+      "api/**/*.{go}": {
+        "maxDuration": 10
+      }
+    }
+  }
+  
