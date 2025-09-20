@@ -1,5 +1,16 @@
 {
-    "routes": [
-      { "src": "/(.*)", "dest": "/api" }
+    "functions": {
+      "api/main.go": {
+        "maxDuration": 10
+      }
+    },
+    "rewrites": [
+      { "source": "/api/chain",  "destination": "/api/main" },
+      { "source": "/api/tx",     "destination": "/api/main" },
+      { "source": "/api/mine",   "destination": "/api/main" },
+      { "source": "/api/search", "destination": "/api/main" },
+      { "source": "/api/txs",    "destination": "/api/main" },
+      { "source": "/api",        "destination": "/api/main" }
     ]
   }
+  
