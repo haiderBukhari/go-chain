@@ -32,7 +32,7 @@ var (
 func init() {
 	// Cold-start init (serverless: not guaranteed across invocations)
 	if len(chain) == 0 {
-		genTxs := []string{"genesis"}
+		genTxs := []string{"i22-0980"}
 		gen := Block{
 			Index:        0,
 			Timestamp:    time.Now().UTC(),
@@ -236,6 +236,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 	default:
 		// For /api (root), show a tiny index
 		writeJSON(w, http.StatusOK, map[string]any{
+			"blockchain": "Haider Bukhari Blockchain",
 			"endpoints": []string{"/api/chain", "/api/tx (POST)", "/api/mine (POST)", "/api/search?q=...", "/api/txs"},
 		})
 	}
