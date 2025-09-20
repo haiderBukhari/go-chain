@@ -118,7 +118,7 @@ export function BlockchainExplorer({ blocks }: BlockchainExplorerProps) {
                             <Clock className="h-4 w-4 text-accent" />
                             <span className="font-semibold text-sm">Nonce:</span>
                           </div>
-                          <Badge variant="outline" className="font-mono text-accent">
+                          <Badge variant="outline" className="font-mono text-gray-700">
                             {block.nonce.toLocaleString()}
                           </Badge>
                         </div>
@@ -128,7 +128,7 @@ export function BlockchainExplorer({ blocks }: BlockchainExplorerProps) {
                             <Layers className="h-4 w-4 text-secondary" />
                             <span className="font-semibold text-sm">Merkle Root:</span>
                           </div>
-                          <code className="hash-text text-secondary bg-background/50 p-2 rounded block break-all">
+                          <code className="hash-text text-primary bg-background/50 p-2 rounded block break-all">
                             {block.merkleRoot}
                           </code>
                         </div>
