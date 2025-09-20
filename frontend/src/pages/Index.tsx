@@ -89,11 +89,10 @@ const Index = () => {
               <Cpu className="h-6 w-6 text-accent absolute -bottom-1 -right-1" />
             </div>
             <h1 className="text-4xl font-bold gradient-primary bg-clip-text text-transparent">
-              Mini Blockchain Explorer
+              Haider Bukhari Blockchain
             </h1>
           </div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A beautiful interface to interact with your local blockchain node. 
             Add transactions, mine blocks, and explore the chain.
           </p>
         </div>
