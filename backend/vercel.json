@@ -1,8 +1,15 @@
 {
-    "functions": {
-      "api/**/*.go": {
-        "maxDuration": 10
-      }
+  "functions": {
+    "api/index.go": {
+      "maxDuration": 10
     }
-  }
-  
+  },
+  "rewrites": [
+    { "source": "/api/chain",  "destination": "/api/index" },
+    { "source": "/api/tx",     "destination": "/api/index" },
+    { "source": "/api/mine",   "destination": "/api/index" },
+    { "source": "/api/search", "destination": "/api/index" },
+    { "source": "/api/txs",    "destination": "/api/index" },
+    { "source": "/api",        "destination": "/api/index" }
+  ]
+}

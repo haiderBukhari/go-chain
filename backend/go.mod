@@ -1,3 +1,2 @@
-module backend
-
-go 1.25.1
+module go-chain-backend
+go 1.22
